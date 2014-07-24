@@ -746,7 +746,8 @@ limitations under the License.
                     .on("mousedown.accessible-megamenu", $.proxy(_mouseDownHandler, this));
 
                 if (isTouch) {
-                    menu.on("touchstart.accessible-megamenu",  $.proxy(_clickHandler, this));
+                    // Springbox Commented out to fix touch issues
+                    // menu.on("touchstart.accessible-megamenu",  $.proxy(_clickHandler, this));
                 }
 
                 menu.find("hr").attr("role", "separator");
